@@ -28,8 +28,10 @@
             font-size: 2rem;
             margin-bottom: 1rem;
             color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
         }
-        .about, .experience, .skills {
+        .about, .experience, .skills, .projects, .education {
             margin-bottom: 2rem;
         }
         h2 {
@@ -37,9 +39,20 @@
         }
         ul {
             list-style-type: none;
+            padding: 0;
         }
         ul li {
             padding: 0.5rem 0;
+        }
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+        .experience-item h3, .project-item h3 {
+            color: #333;
+            font-weight: bold;
+        }
+        .experience-item p, .project-item p, .education-item p {
+            margin: 0.5rem 0;
         }
     </style>
 </head>
@@ -47,48 +60,68 @@
 
 <header>
     <h1>Yu-Chien Hung</h1>
-    <p>Business Analytics | Data Processing | Financial Systems</p>
+    <p>Business Analytics | Data Processing | Financial Systems Development</p>
 </header>
 
 <div class="container">
     <section class="about">
         <h2 class="section-title">About Me</h2>
         <p>
-            I am currently pursuing a Master of Science in Business Analytics at the University of Illinois Urbana-Champaign. 
-            I have extensive experience in data processing, financial systems development, and process optimization, 
-            having led initiatives that improved reporting efficiency and client satisfaction. 
-            I am skilled in SQL, COBOL, Java, and data visualization tools such as Tableau and Power BI.
+            Pursuing a Master of Science in Business Analytics at the University of Illinois Urbana-Champaign, with expertise in data processing, financial systems, and process optimization. Known for improving client satisfaction and reporting efficiency. Skilled in SQL, COBOL, Java, and visualization tools like Tableau and Power BI.
         </p>
     </section>
 
     <section class="experience">
-        <h2 class="section-title">Experience</h2>
-        <ul>
-            <li>
-                <h3>Mega International Commercial Bank - Manager</h3>
-                <p>March 2021 – July 2023 | Taipei, Taiwan</p>
-                <p>Led a team to optimize data management, improving processing efficiency by 20%. Enhanced reporting procedures, reducing errors and boosting client satisfaction.</p>
-            </li>
-            <li>
-                <h3>Taiwan Business Bank - Junior Program Designer</h3>
-                <p>August 2019 – March 2021 | Taipei, Taiwan</p>
-                <p>Developed software solutions for banking operations, increasing ROI by 15%. Automated reporting processes, reducing operational errors by 5%.</p>
-            </li>
-            <li>
-                <h3>O-Bank - Summer Intern</h3>
-                <p>July 2018 – August 2018 | Taipei, Taiwan</p>
-                <p>Assisted in financial analysis and security compliance research, providing strategic insights for management.</p>
-            </li>
-        </ul>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-item">
+            <h3>Mega International Commercial Bank - Manager</h3>
+            <p>March 2021 – July 2023 | Taipei, Taiwan</p>
+            <p>Conducted client data analysis with SAS, enhancing product offerings and raising customer satisfaction by 15%. Led cross-functional teams to improve transaction processes, reducing processing times by 20%. Implemented Tableau for reporting, decreasing analysis time by 25% and improving decision-making speed.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Taiwan Business Bank - Junior Program Designer</h3>
+            <p>August 2019 – March 2021 | Taipei, Taiwan</p>
+            <p>Designed automated loan processes with COBOL, cutting operational errors by 20%. Developed SQL scripts to optimize data management, supporting risk assessments and enhancing client reporting accuracy.</p>
+        </div>
+        <div class="experience-item">
+            <h3>O-Bank - Summer Intern</h3>
+            <p>July 2018 – August 2018 | Taipei, Taiwan</p>
+            <p>Assisted in financial data analysis and compliance research, contributing strategic insights that supported new product development and security alignment with ISO27001 standards.</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-item">
+            <h3>IWERC Business Practicum</h3>
+            <p>September 2024 – December 2024 | Champaign, IL, USA</p>
+            <p>Built an interactive dashboard with Tableau to track Learning Renewal initiatives, enabling stakeholders to monitor metrics in real time. Analyzed educational data to create Data Requirements Documents, reducing operational times by 15% and increasing customer satisfaction.</p>
+        </div>
     </section>
 
     <section class="skills">
         <h2 class="section-title">Skills</h2>
         <ul>
-            <li>Programming: SQL, COBOL, Java, C, Python</li>
-            <li>Data Analysis: Microsoft Excel, R, Tableau, Power BI</li>
-            <li>Languages: Mandarin (Fluent), English (Proficient), Japanese (Intermediate)</li>
+            <li><strong>Programming Languages:</strong> SQL (expert), COBOL (expert), Python, R, Java, C</li>
+            <li><strong>Data Analysis Tools:</strong> Microsoft Excel, SAS, Tableau, Power BI</li>
+            <li><strong>Technologies:</strong> Database Management, AWS, ChatGPT</li>
+            <li><strong>Languages:</strong> Mandarin (native), English (proficient), Japanese (intermediate)</li>
+            <li><strong>Key Competencies:</strong> Data Analysis, Systems Development, Process Optimization, Cross-functional Collaboration, Communication</li>
         </ul>
+    </section>
+
+    <section class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <h3>University of Illinois Urbana-Champaign</h3>
+            <p>Master of Science in Business Analytics, May 2025</p>
+            <p>Relevant Coursework: Enterprise Database Management, Business Intelligence</p>
+        </div>
+        <div class="education-item">
+            <h3>Tamkang University</h3>
+            <p>Bachelor of Business & Management, June 2019</p>
+            <p>Major: Information Management (GPA: 3.4)</p>
+        </div>
     </section>
 </div>
 
