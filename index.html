@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yu-Chien Hung - Portfolio</title>
     <style>
-        /* Base Styling */
+        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -16,162 +15,172 @@
         body {
             font-family: Arial, sans-serif;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            line-height: 1.6;
         }
         a {
+            color: #0073e6;
             text-decoration: none;
-            color: inherit;
         }
-        
-        /* Sidebar Styling */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 240px;
-            height: 100vh;
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 0;
-        }
-        .sidebar h1 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-            color: #fff;
-        }
-        .sidebar p {
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-            color: #ddd;
-            text-align: center;
-        }
-        .sidebar nav a {
-            display: block;
-            padding: 0.8rem 0;
-            color: #fff;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-        .sidebar nav a:hover {
-            color: #0073e6;
-        }
-        .contact-info {
-            margin-top: auto;
-            padding-top: 2rem;
-            font-size: 0.9rem;
-            color: #bbb;
-            text-align: center;
-        }
-        .contact-info a {
-            color: #0073e6;
+        a:hover {
+            color: #005bb5;
         }
 
-        /* Main Content Styling */
-        .content {
-            margin-left: 240px;
-            padding: 2rem;
-            max-width: 900px;
+        /* Container and Layout */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
         }
+        
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #0073e6;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .navbar a {
+            font-weight: bold;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        /* Section Styles */
         .section {
             margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
         }
         .section-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-bottom: 1rem;
             color: #333;
             border-bottom: 2px solid #0073e6;
             padding-bottom: 0.5rem;
         }
-        .experience-item, .project-item, .education-item {
+        
+        /* Experience and Project Items */
+        .item {
             margin-bottom: 1.5rem;
         }
-        .experience-item h3, .project-item h3 {
+        .item h3 {
             font-size: 1.2rem;
-            color: #333;
-        }
-        .experience-item p, .project-item p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.5;
-        }
-        .skills-list, .education-list {
-            list-style-type: none;
-            padding: 0;
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.5;
-        }
-        .skills-list li, .education-list li {
+            color: #0073e6;
             margin-bottom: 0.5rem;
+        }
+        .item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .bullet {
+            margin-left: 1.5rem;
+            color: #333;
+            list-style-type: disc;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .contact-info a {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-<!-- Sidebar Navigation -->
-<div class="sidebar">
+<header>
     <h1>Yu-Chien Hung</h1>
     <p>Business Analytics | Data Processing | Financial Systems</p>
-    <nav>
+    <nav class="navbar">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <div class="contact-info">
-        <p>Contact</p>
-        <p>Email: <a href="mailto:ritahung0830@gmail.com">ritahung0830@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yuchien-hung-aa973215b/" target="_blank">linkedin.com/in/yuchien-hung</a></p>
-        <p>GitHub: <a href="https://github.com/Venkateeshh/Portfolio-Website/blob/master/index.html" target="_blank">GitHub Profile</a></p>
-    </div>
-</div>
+</header>
 
-<!-- Main Content -->
-<div class="content">
+<div class="container">
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
         <p>
-            I am currently pursuing a Master of Science in Business Analytics at the University of Illinois Urbana-Champaign.
-            I specialize in data processing, financial systems development, and process optimization, and am recognized for improving client satisfaction and operational efficiency.
-            Proficient in SQL, COBOL, Java, and data visualization tools such as Tableau and Power BI.
+            I am pursuing a Master of Science in Business Analytics at the University of Illinois Urbana-Champaign.
+            With a strong background in data processing, financial systems, and process optimization, I drive operational efficiency and client satisfaction. My technical skills include SQL, COBOL, Java, and visualization tools like Tableau and Power BI.
         </p>
     </section>
 
     <section id="experience" class="section">
         <h2 class="section-title">Professional Experience</h2>
-        <div class="experience-item">
+
+        <div class="item">
             <h3>Mega International Commercial Bank - Manager</h3>
             <p>March 2021 – July 2023 | Taipei, Taiwan</p>
-            <p>Led cross-functional teams to optimize transaction processes, enhancing efficiency by 20% and customer satisfaction by 15%. Spearheaded the adoption of Tableau for data reporting, reducing analysis time by 25%.</p>
+            <ul class="bullet">
+                <li>Developed financial models for institutions to analyze revenue growth and performance metrics, influencing strategic decisions.</li>
+                <li>Presented data-driven insights to stakeholders, advising on strategies to improve operational efficiency by 20%.</li>
+                <li>Collaborated with 15 teams on internal inspections and external audits, enhancing regulatory compliance.</li>
+                <li>Guided teams and clients on process improvements, bolstering client outcomes and supporting core banking transformation.</li>
+                <li>Conducted annual ISMS inspections, supporting external audits and minimizing security risks across critical infrastructure.</li>
+            </ul>
         </div>
-        <div class="experience-item">
+
+        <div class="item">
             <h3>Taiwan Business Bank - Junior Program Designer</h3>
             <p>August 2019 – March 2021 | Taipei, Taiwan</p>
-            <p>Developed and automated financial loan processes using COBOL, cutting errors by 20%. Enhanced SQL scripts for data management, increasing reporting accuracy and supporting risk assessments.</p>
+            <ul class="bullet">
+                <li>Collaborated with clients to streamline loan approval processes, reducing approval times and enhancing satisfaction by 15%.</li>
+                <li>Minimized branch data entry errors by 5%, contributing to improved risk management and reporting accuracy.</li>
+                <li>Supported clients in managing broader technology risks and resilience functions, optimizing operations management.</li>
+                <li>Coordinated an outsourced project to upgrade ETABS systems, providing technical specifications to manufacturers.</li>
+            </ul>
         </div>
-        <div class="experience-item">
+
+        <div class="item">
             <h3>O-Bank - Summer Intern</h3>
             <p>July 2018 – August 2018 | Taipei, Taiwan</p>
-            <p>Assisted in financial data analysis and security compliance research, providing strategic insights for management on ISO27001 standards.</p>
+            <ul class="bullet">
+                <li>Built financial models for the passive components industry, informing strategic decisions and risk analysis.</li>
+                <li>Partnered with the Infrastructure Department on business impact analysis and ISO27001 research for information security.</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
-        <div class="project-item">
+
+        <div class="item">
             <h3>IWERC Business Practicum</h3>
-            <p>September 2024 – December 2024 | Champaign, IL, USA</p>
-            <p>Developed an interactive Tableau dashboard to track Learning Renewal initiatives, allowing real-time metric monitoring and reducing operational times by 15%.</p>
+            <p>September 2024 – Present | Champaign, IL, USA</p>
+            <ul class="bullet">
+                <li>Designed an interactive Tableau dashboard to track Learning Renewal initiatives, enabling real-time metric monitoring.</li>
+                <li>Collaborated on state educational data analysis, presenting solutions that reduced operational times by 15% and increased satisfaction.</li>
+            </ul>
         </div>
     </section>
 
     <section id="skills" class="section">
         <h2 class="section-title">Skills</h2>
-        <ul class="skills-list">
+        <ul class="bullet">
             <li><strong>Programming Languages:</strong> SQL, COBOL, Python, R, Java, C</li>
             <li><strong>Data Analysis Tools:</strong> Microsoft Excel, SAS, Tableau, Power BI</li>
             <li><strong>Technologies:</strong> Database Management, AWS, ChatGPT</li>
@@ -182,10 +191,19 @@
 
     <section id="education" class="section">
         <h2 class="section-title">Education</h2>
-        <ul class="education-list">
-            <li><strong>University of Illinois Urbana-Champaign</strong> - Master of Science in Business Analytics, May 2025</li>
-            <li><strong>Tamkang University</strong> - Bachelor of Business & Management, June 2019 (GPA: 3.4)</li>
+        <ul class="bullet">
+            <li><strong>University of Illinois Urbana-Champaign:</strong> Master of Science in Business Analytics, May 2025</li>
+            <li><strong>Tamkang University:</strong> Bachelor of Information Management, June 2019 </li>
         </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:ritahung0830@gmail.com">ritahung0830@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yuchien-hung-aa973215b/" target="_blank">linkedin.com/in/yuchien-hung</a></p>
+            <p>GitHub: <a href="https://github.com/Venkateeshh/Portfolio-Website/blob/master/index.html" target="_blank">GitHub Profile</a></p>
+        </div>
     </section>
 </div>
 
